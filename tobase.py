@@ -6,6 +6,7 @@ def to_base(num, toBase=2, fromBase=10):
     fromBase (set to 10 by default)) to any base (toBase) that by default is
     equal to 2 (binary).
     '''
+    if num == 0: return '0'
     num = int(str(num), fromBase)
     out = ''
     maximum = int(log(num, toBase)) 
